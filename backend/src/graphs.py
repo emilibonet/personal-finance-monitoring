@@ -1,8 +1,8 @@
 import pandas as pd
 import plotly.graph_objects as go
 from typing import Tuple, Optional
-from utils import hex_to_rgba, colors
-from forecasting import sarima
+from .utils import hex_to_rgba, colors
+from .forecasting import sarima
 
 def sankey_diagram(data: pd.DataFrame) -> go.Figure:
     # Separate inflows and outflows
